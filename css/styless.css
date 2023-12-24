@@ -15,11 +15,16 @@ body{
 }
 .container2{
   background:transparent;
-  width:100%;
+  width:auto;
   overflow: hidden;
  
  
   
+}
+.ULABOUTUS{
+  display:contents;
+  justify-content: space-between;
+
 }
 .container3{
 
@@ -44,7 +49,7 @@ padding:20px 0;
 
     width:70px;
     border-color: rgb(255, 255, 255);
-   
+    
     border-style: groove;
     border-left: transparent;
     border-top: transparent;
@@ -459,9 +464,8 @@ border-width: 4;
 }
 .aboutusimg{
    padding-left: 5%;
-    justify-content: center;
-    
-    
+   display:grid;
+    justify-content: center;   
     border-bottom: rgb(36, 103, 81);
     border-style:dashed;
     border-left: transparent;

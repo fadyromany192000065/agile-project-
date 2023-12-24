@@ -32,7 +32,7 @@ function login()
   }
   else if(!filter.test(uname))
   {
-    alert(" el email dh fy 7aga 8alat ");
+    alert("Email Syntax Error");
   }
 
   else if( pwd.length < 6 )
@@ -41,7 +41,7 @@ function login()
   }
   else
   {
-     alert('na3eed mn el 2awal ');
+     alert("email and password accepted");
      window.location = "register.html";
     }
 }
@@ -62,71 +62,34 @@ function signup()
     
   }
   else if(!validFirstName.test(fname)){
-    alert("el first name mesh kolo string wa dh maynfa3sh");
+    alert(" wrong first name syntax ");
   }
 
-  else if(lname=="")
+  if(lname=="")
   {
    
   }else if(!validLastName.test(lname)){
-    alert("el last name mesh kolo string wa dh maynfa3sh ");
-  }else{
-    
-    return true;
+    alert("wrong last name syntax");
+
   }
- 
   if(uname =='')
   {
   
   }
-  else if(pwd =='')
-  {
-    alert("ana la 2ara password");
-  }
   else if(!filter.test(uname))
   {
-    alert(" el email dh fy 7aga 8alat ");
+    alert("wrong email syntax");
   }
+  if(pwd =='')
+  {
 
+  }
   else if(pwd.length < 6 )
-  {  alert.display = block;
+  {  
     alert("Password is less than usual ");
   }
-
-
-}
-function contactus()
-{
-  var lname = document.getElementById("lname").value;
-  var fname = document.getElementById("fname").value;
-  var validFirstName=/^[A-Za-z]+$/;
-  var validLastName=/^[A-Za-z]+$/;
-  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-   
-  if(fname =='')
-  {
-
-    
-  }
-  else if(!validFirstName.test(fname)){
-    alert("el first name mesh kolo string wa dh maynfa3sh");
-  }
-
-  else if(lname=="")
-  {
-   
-  }else if(!validLastName.test(lname)){
-    alert("el last name mesh kolo string wa dh maynfa3sh ");
-  }else{
-    
-    return true;
-  }
-  if(uname =='')
-  {
-  
-  }
-  else if(!filter.test(uname))
-  {
-    alert(" el email dh fy 7aga 8alat ");
+  else{
+    alert(" CONGRATULATIONS, YOU HAVE SUCCESSFULLY REGISTERED ");
+ 
   }
 }
