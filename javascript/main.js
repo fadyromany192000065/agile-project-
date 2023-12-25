@@ -93,3 +93,37 @@ function signup()
  
   }
 }
+function contactus()
+{
+  var uname = document.getElementById("text1").value;
+  var lname = document.getElementById("lname").value;
+  var fname = document.getElementById("fname").value;
+  var validFirstName=/^[A-Za-z]+$/;
+  var validLastName=/^[A-Za-z]+$/;
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   
+  if(fname =='')
+  {
+
+    
+  }
+  else if(!validFirstName.test(fname)){
+    alert("FIRST NAME SYTAX ERROR NAME SHOULD CONTAIN ONLY LETTERS");
+  }
+
+  if(lname=="")
+  {
+   
+  }else if(!validLastName.test(lname)){
+    alert("LAST NAME SYTAX ERROR NAME SHOULD CONTAIN ONLY LETTERS");
+  }
+  if(uname =='')
+  {
+  
+  }
+  else if(!filter.test(uname))
+  {
+    alert(" THIS EMAIL IS WRITTEN IN THE WRONG SYNTAX")
+  }
+  
+}
