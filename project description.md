@@ -6,5 +6,5 @@ it contains new ways of advertising for the product in the	**home page**
 and it has other pages like **sign in** and **sign up** for the sake of saving the user data in the future data base 
 and thier is other pages like **contactus** and **aboutus** as we discussed before 
 
-fady romany : commited the signin/up and the home page 
-mahmoud el fatah : commited the aboutus and the contactus page and updated the about us page 
+-fady romany : commited the signin/up and the home page 
+*mahmoud el fatah : commited the aboutus and the contactus page and updated the about us page 
